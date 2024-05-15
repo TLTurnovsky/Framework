@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Framework</string>
+    <string name="title_activity_app_navigation">AppNavigation</string>
+    <string name="title_activity_base_screens">BaseScreens</string>
+    <string name="title_activity_recruit_screen">RecruitScreen</string>
+    <string name="title_activity_main_screen2">MainScreen2</string>
+    <string name="name_character1">The Creator</string>
+    <string name="name_character2">Arwen</string>
+    <string name="name_character3">Boon Sai Yung</string>
+    <string name="name_character4">Djinn</string>
+    <string name="name_character5">Cleric</string>
+    <string name="name_character6">Mercenary</string>
+    <string name="attributes_character1">Old guy, powerful ranged spells</string>
+    <string name="attributes_character2">Ranger, equipped with a bow and sword</string>
+    <string name="attributes_character3">Monk, Open hand style, magic hands</string>
+    <string name="attributes_character4">Magic user, ranged spells, chaotic</string>
+    <string name="attributes_character5">Healer, ranged spells</string>
+    <string name="attributes_character6">Strong, tough, melee only</string>
+    <string name="title_activity_app_bar">AppBar</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="title_activity_menu_item">MenuItem</string>
+</resources>
