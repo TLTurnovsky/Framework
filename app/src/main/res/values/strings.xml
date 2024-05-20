@@ -16,7 +16,9 @@
     <string name="attributes_character4">Magic user, ranged spells, chaotic</string>
     <string name="attributes_character5">Healer, ranged spells</string>
     <string name="attributes_character6">Strong, tough, melee only</string>
-    <string name="title_activity_app_bar">AppBar</string>
+    <string name="title_activity_app_bar">Framework</string>
     <string name="title_activity_navigation_drawer">NavigationDrawer</string>
     <string name="title_activity_menu_item">MenuItem</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
