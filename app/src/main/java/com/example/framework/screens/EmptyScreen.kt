@@ -22,7 +22,7 @@ fun EmptyScreen() {
 @Preview
 @Composable
 fun EmptyScreenPreview(){
-    EmptyScreen(navController = NavHostController(context = LocalContext.current))
+    EmptyScreen()
 }
 
 

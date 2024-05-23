@@ -34,13 +34,13 @@ fun AppNavHost(
         startDestination = startDestination
     ) {
         composable(NavigationItem.Start.route) {
-            MainScreen(navController, modifier)
+            MainScreen(navController)
         }
         composable(NavigationItem.Recruit.route) {
             RecruitScreen(navController, modifier)
         }
         composable(NavigationItem.Empty.route) {
-            EmptyScreen(navController, modifier)
+            EmptyScreen()
         }
     }
 }
