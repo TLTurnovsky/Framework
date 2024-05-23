@@ -1,4 +1,4 @@
-package com.example.framework.characters
+package com.example.framework.data
 
 import com.example.framework.R
 

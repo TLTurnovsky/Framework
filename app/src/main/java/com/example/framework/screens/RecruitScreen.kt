@@ -1,4 +1,4 @@
-package com.example.framework
+package com.example.framework.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -22,8 +22,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.compose.foundation.lazy.items
-import com.example.framework.characters.CharacterModel
-import com.example.framework.characters.CharacterDataSource
+import com.example.framework.data.CharacterModel
+import com.example.framework.data.CharacterDataSource
 
 @Composable
 fun RecruitScreen(navController: NavHostController, modifier: Modifier = Modifier) {

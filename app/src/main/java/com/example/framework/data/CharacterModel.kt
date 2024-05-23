@@ -1,4 +1,4 @@
-package com.example.framework.characters
+package com.example.framework.data
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes

@@ -1,6 +1,5 @@
-package com.example.framework.ui.theme
+package com.example.framework.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
