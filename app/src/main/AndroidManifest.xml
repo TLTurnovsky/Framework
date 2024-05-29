@@ -13,6 +13,11 @@
         android:theme="@style/Theme.Framework"
         tools:targetApi="31">
         <activity
+            android:name=".screens.components.RecruitCard"
+            android:exported="false"
+            android:label="@string/title_activity_recruit_card"
+            android:theme="@style/Theme.Framework" />
+        <activity
             android:name=".NavigationDrawer"
             android:exported="false"
             android:label="@string/title_activity_navigation_drawer"

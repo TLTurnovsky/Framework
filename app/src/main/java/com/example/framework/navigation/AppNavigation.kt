@@ -1,46 +1,49 @@
 package com.example.framework.navigation
 
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.framework.screens.EmptyScreen
 import com.example.framework.screens.MainScreen
-import com.example.framework.screens.RecruitScreen
+import com.example.framework.screens.recruit.RecruitScreen
+import com.example.framework.screens.RulesScreen
 
 enum class Screen {
     Start,
     Recruit,
-    Empty
+    Rules
 }
 
 sealed class NavigationItem(val route: String) {
     data object Start : NavigationItem(Screen.Start.name)
     data object Recruit : NavigationItem(Screen.Recruit.name)
-    data object Empty: NavigationItem(Screen.Empty.name)
+    data object Rules: NavigationItem(Screen.Rules.name)
 }
 
 @Composable
 fun AppNavHost(
     modifier: Modifier = Modifier,
     navController: NavHostController = rememberNavController(),
-    startDestination: String = NavigationItem.Start.route
+    startDestination: String = NavigationItem.Start.route,
+    paddingValues: PaddingValues
 ) {
     NavHost(
-        modifier = modifier,
+        modifier = modifier.padding(paddingValues),
         navController = navController,
         startDestination = startDestination
     ) {
         composable(NavigationItem.Start.route) {
-            MainScreen(navController)
+            MainScreen(modifier = Modifier.padding(paddingValues))
         }
         composable(NavigationItem.Recruit.route) {
-            RecruitScreen(navController, modifier)
+            RecruitScreen( modifier = Modifier.padding(paddingValues))
         }
-        composable(NavigationItem.Empty.route) {
-            EmptyScreen()
+        composable(NavigationItem.Rules.route) {
+            RulesScreen(modifier = Modifier.padding(paddingValues))
         }
     }
 }

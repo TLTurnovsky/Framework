@@ -71,6 +71,10 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation("androidx.compose.ui:ui-text-android:1.6.7")
     implementation ("androidx.compose.material:material:1.6.7")
+    implementation("androidx.compose.ui:ui:1.6.7")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.6.7")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
+    //implementation("org.jetbrains.kotlin:kotlinx-coroutines-android:1.5.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

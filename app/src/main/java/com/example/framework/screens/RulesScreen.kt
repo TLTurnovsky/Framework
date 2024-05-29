@@ -6,14 +6,12 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavHostController
 
 @Composable
-fun EmptyScreen() {
+fun RulesScreen(modifier: Modifier = Modifier) {
     Box(modifier = Modifier
-        .background(color = Color.Blue)
+        .background(color = Color.Yellow)
         .fillMaxSize()
         ){
     }
@@ -22,7 +20,7 @@ fun EmptyScreen() {
 @Preview
 @Composable
 fun EmptyScreenPreview(){
-    EmptyScreen()
+    RulesScreen(Modifier)
 }
 
 
