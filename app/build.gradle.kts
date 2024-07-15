@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
+    id("com.google.devtools.ksp") version "1.6.10-1.0.2"
+    id("kotlin-parcelize")
 }
 
 android {
@@ -63,18 +65,18 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.navigation.compose)
-    implementation ("androidx.compose.material3:material3:1.2.1")
+    implementation (libs.material3)
     implementation("androidx.compose.material3:material3-window-size-class:1.2.1")
-    implementation("androidx.compose.material3:material3-adaptive-navigation-suite:1.3.0-beta01")
+    implementation(libs.androidx.material3.adaptive.navigation.suite)
     implementation(libs.play.services.maps)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
-    implementation("androidx.compose.ui:ui-text-android:1.6.7")
-    implementation ("androidx.compose.material:material:1.6.7")
-    implementation("androidx.compose.ui:ui:1.6.7")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.6.7")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
-    //implementation("org.jetbrains.kotlin:kotlinx-coroutines-android:1.5.0")
+    implementation(libs.androidx.ui.text.android)
+    implementation (libs.androidx.material)
+    implementation(libs.ui)
+    implementation(libs.ui.tooling.preview)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.kotlinx.coroutines.android)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
